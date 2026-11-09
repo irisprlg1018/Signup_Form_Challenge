@@ -28,22 +28,46 @@ p.trial_text {
   box-shadow: inset;
   box-sizing: border-box;
   margin-left: 300px;
+  justify-content: right;
 }
 
 .form {
   background-color: white;
+  color: hsl(249, 10%, 26%);
   field-sizing: content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  width: 400px;
+  padding: 20px 0px 10px 10px;
+  width: 600px;
   border-radius: 10px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  text-align: left;
+}
+
+input {
+  border-radius: 2px solid;
+  display: block;
+  font-size: 16px;
+  padding: 5px 80px;
+  text-align: left;
 }
 
 .button {
+  color: white;
   background-color: hsl(154, 59%, 51%);
   text-transform: uppercase;
   border-radius: 5px;
-  width: 250px;
+  padding: 5px 90px;
+}
+
+.disclosure {
+  font-size: 0.8rem;
+}
+
+b.disclosure {
+  color: hsl(0, 100%, 74%);
 }
