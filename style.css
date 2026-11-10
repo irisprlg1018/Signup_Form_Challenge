@@ -44,6 +44,7 @@ body {
 .trial_text {
   background-color: hsl(248, 32%, 49%);
   color: white;
+  font-size: 12px;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
@@ -60,37 +61,45 @@ form {
   field-sizing: content;
   color: hsl(249, 10%, 26%);
   padding: 20px;
-  width: 100%;
+  width: 380px;
+  align-items: center;
   border-radius: 10px;
   box-sizing: border-box;
   box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
-/*form input*/
+/*form input::placeholder*/
 
 input::placeholder {
-  border-radius: 2px solid;
-  font-size: 16px;
-  padding: 5px;
-  align-items: left ;
+  align-items: left;
 }
-  /*button*/
-  .button {
-    color: white;
-    background-color: hsl(154, 59%, 51%);
-    text-transform: uppercase;
-    border-radius: 5px;
-    padding: 5px;
-    width: 300px;
-  }
+/*form input box*/
 
-  /*disclosure*/
+input {
+  width: 300px;
+  padding: 10px;
+}
 
-  .disclosure {
-    font-size: 0.8rem;
-  }
+/*button*/
+.button {
+  color: white;
+  background-color: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 10px;
+  width: 320px;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 15px;
+}
 
-  b.disclosure {
-    color: hsl(0, 100%, 74%);
-  }
+/*disclosure*/
+
+.disclosure {
+  font-size: 0.5rem;
+  color: hsl(246, 25%, 77%);
+}
+
+b.disclosure {
+  color: hsl(0, 100%, 74%);
 }
