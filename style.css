@@ -7,6 +7,7 @@ body {
   display: flex;
   align-items: center;
   min-height: 100vh;
+  font-family: "Poppins";
 }
 
 /*style for the main page*/
@@ -15,15 +16,81 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 40px;
-  width: 100%;
-  max-width: 1200px;
+  width: 90%;
+  max-width: 1440px;
+  justify-content: space-between;
   padding: 20px;
   box-sizing: border-box;
+  margin: auto;
+  padding: 20px;
 }
 
 /*left side content*/
 .left_container {
-  flex: 1;
+  max-width: 500px;
   color: white;
   text-align: left;
+}
+
+/*right side content*/
+.right_container {
+  display: flex;
+  flex-direction: column; /*allows to have the banner above the form*/
+  gap: 20px; /*the space between the form and banner*/
+  max-width: 600px;
+}
+
+/*7day trial banner*/
+.trial_text {
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
+  border-width: 0px;
+  padding: 10px;
+  width: 350px;
+}
+
+/*main form*/
+form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  field-sizing: content;
+  color: hsl(249, 10%, 26%);
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+/*form input*/
+
+input::placeholder {
+  border-radius: 2px solid;
+  font-size: 16px;
+  padding: 5px;
+  align-items: left ;
+}
+  /*button*/
+  .button {
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 5px;
+    width: 300px;
+  }
+
+  /*disclosure*/
+
+  .disclosure {
+    font-size: 0.8rem;
+  }
+
+  b.disclosure {
+    color: hsl(0, 100%, 74%);
+  }
 }
