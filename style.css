@@ -81,7 +81,7 @@ input {
 }
 
 /*button*/
-.button {
+#button {
   color: white;
   background-color: hsl(154, 59%, 51%);
   text-transform: uppercase;

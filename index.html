@@ -30,7 +30,7 @@
         <input
           type="text"
           id="firstName"
-          name="firstName"
+          name="firstName" required
           placeholder="First Name"
         />
       </label>
@@ -39,7 +39,7 @@
         <input
           type="text"
           id="lastName"
-          name="lastName"
+          name="lastName" required
           placeholder="Last Name"
         />
       </label>
@@ -48,7 +48,7 @@
         <input
           type="email"
           id="emailAdd"
-          name="emailAdd"
+          name="emailAdd" required
           placeholder="Email Address"
         />
       </label>
@@ -57,17 +57,18 @@
         <input
           type="password"
           id="password"
-          name="password"
+          name="password" 
           placeholder="Password"
           required="required"
         />
       </label>
     
-    <input class="button" type="submit" value="claim your free trial"/> 
+    <input id="button" type="submit" value="claim your free trial"/> 
    
   <p class="disclosure">By clicking the button, you are agreeing to our <b class="disclosure">Terms and Services</b></p>
    </form>
   </div>
   </main> 
+  <script src="script.js"> </script>
   </body>
 </html>
